@@ -1,0 +1,93 @@
+/* CSS do Footer */
+.footer {
+  background: #1e486a;
+  color: #fff;
+  font-size: 0.95rem;
+  padding-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Componentes do Forum -- Coluna 1 */
+.footer-logo {
+  flex: 1 1 300px;
+}
+
+.footer-logo img {
+  width: 140px;
+  margin-bottom: 12px;
+}
+
+.footer-logo h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #090701;
+}
+
+.footer-logo p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* Coluna 2 */
+.footer-nav {
+  flex: 1 1 180px;
+}
+
+.footer-nav h4 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #090701;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 8px;
+}
+
+.footer-nav a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+/* Rodapé, também conhecido como Footer*/
+.footer-bottom {
+  text-align: center;
+  padding: 16px 0;
+  background: #0a4477;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .footer-logo,
+  .footer-nav,
+  .footer-social {
+    flex: 1 1 100%;
+  }
+}
