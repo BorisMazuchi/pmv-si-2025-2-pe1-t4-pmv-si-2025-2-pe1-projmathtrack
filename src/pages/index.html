@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página de Usuário — Home</title>
+
+  <!-- Estilo da Página:
+   Tem que colocar CSS da Página, Navbar, Footer e Bse -->
+  <link rel="stylesheet" href="/src/styles/Base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/paginausuario.css" />
+  <link rel="stylesheet" href="/src/styles/components/navbar.css">
+  <link rel="stylesheet" href="/src/styles/components/footer.css" />
+
+
+  <!-- Aqui incluímos o Navbar:
+   Precisa de JS (Próxima Etapa)-->
+  <div data-include="/src/components/navbar.html"></div>
+</head>
+<body>
+
+    
+
+    <!-- TOPO AZUL -->
+    <div class="topo-azul">
+        <h1>Meu perfil</h1>
+        <p>
+            Informações pessoais e opções de gerenciamento. Você pode deixar
+            algumas dessas informações visíveis para que outras pessoas entrem em contato.
+        </p>
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="perfil-container">
+
+        <!-- ABA DO USUÁRIO -->
+        <div class="caixa-usuario">
+            <div class="foto"></div>
+
+            <h3>Nome do Usuário</h3>
+            <p>
+                Estudante de xxxx<br>
+                Último Login: Data
+            </p>
+
+            <hr>
+
+            <p>
+                <b>15</b> Fóruns<br>
+                <b>4</b> Módulos
+            </p>
+
+            <hr>
+
+            <p>
+                Ranking<br>
+                <b>Diamante</b> 💎
+            </p>
+        </div>
+
+        <!-- INFORMAÇÕES -->
+        <div class="caixas-info">
+
+            <div class="caixa">
+                <h3>Informações Básicas <a href="#" class="editar">Editar ✏️</a></h3>
+                <p>
+                    <b>Nome:</b> xxxx<br>
+                    <b>Sobrenome:</b> xxxx<br>
+                    <b>Gênero:</b> xxxxx<br>
+                    <b>Data de Nascimento:</b> xx/xx/xxxx
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>Informações de Contato <a href="#" class="editar">Editar ✏️</a></h3>
+                <p>
+                    <b>Email:</b> aluno@email.com<br>
+                    <b>Telefone:</b> (31) 99999-9999
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>Senha <a href="#" class="editar">Editar ✏️</a></h3>
+                <p>
+                    <b>Senha:</b> ********<br>
+                    <b>Última alteração:</b> 15/10/2025
+                </p>
+            </div>
+
+            <div class="caixa">
+                <h3>Contas Conectadas <a href="#" class="editar">Editar ✏️</a></h3>
+                <p>
+                    Serviços que você usa para fazer login no site.
+                </p>
+            </div>
+
+        </div>
+    </div>
+ <!-- Aqui é para colocar o Footer:
+   Precisa de JS (Próxima Etapa)-->
+  <div data-include="/src/components/footer.html"></div>
+
+  <!-- JS para incluir a Navbar e o Footer -->
+  <script type="module" src="/src/Scripts/incluir-partes.js"></script>
+</body>
+</html>
+
+
+    
